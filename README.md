@@ -21,32 +21,4 @@
 - In summary, the Command pattern encapsulates a request as an object, making it a powerful tool for building flexible, maintainable, and extensible software systems.
 
 
-+-------------------+         +----------------+          +-----------------+
-|    Command        |         |    Concrete    |          |     Light       |
-|-------------------|         |   Command      |          |-----------------|
-| +execute()        |<--------|----------------|<---------|                 |
-| +undo()           |         | +execute()     |          | +turnOn()       |
-+-------------------+         | +undo()        |          | +turnOff()      |
-                              +----------------+          +-----------------+
-         |                           |
-         |                           |
-         |                           |
-         |                           |
-         |                           |
-         |                           |
-         |                           |
-         |                           |
-         |                           |
-         |                           |
-         |                           |
-+------------------+          +-----------------+
-|  RemoteControl   |          |    Main         |
-|------------------|          |-----------------|
-| -command: Command|          | +main()   
-| -undoStack: Stack|          |                 |
-|------------------|          +-----------------+
-| +setCommand()    |
-| +pressButton()   |
-| +undoButton()    |
-+------------------+
 
